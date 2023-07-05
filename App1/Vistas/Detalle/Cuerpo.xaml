@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Vistas.Detalle.Cuerpo"
+             xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+            >
+
+    <StackLayout>
+        <Grid TranslationY="-40">
+            <Image Source="{Binding ParametrosRecibe.imagen}"
+                Margin="60"
+                x:Name="img" />
+            <Frame CornerRadius="20"
+               HasShadow="False"
+                   Padding="10"
+               Grid.Row="1"
+               VerticalOptions="Start">
+                <StackLayout>
+                    <Label Text="{Binding ParametrosRecibe.descripcion}"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               FontSize="Micro"
+               TextColor="#22223D" />
+        <Label Text="rutina para principiantes"
+               HorizontalOptions="Center"
+               FontSize="Title" />
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+            <Image Source="https://cdn-icons-png.flaticon.com/512/7920/7920538.png"
+                   HeightRequest="60" />
+        </StackLayout>
+        <Grid ColumnDefinitions="*,*"
+              >
+            <sombras:Shadows CornerRadius="60"
+                             Shades="{sombras:SingleShade   Offset='0,30' ,Opacity=0.2,Color=#A1A1A1,BlurRadius=80}"
+                             Margin="10,0,10,15">
+                <Frame CornerRadius="60"
+                       HasShadow="False"
+                       Padding="10,5"
+                       VerticalOptions="Center">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/21/21250.png"
+                               HeightRequest="45" />
+                        <StackLayout>
+                            <Label Text="de 12 a 15 repeticiones"
+                                   FontAttributes="Bold" />
+                            <Label Text="Delivery" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </sombras:Shadows>
+            <sombras:Shadows CornerRadius="60"
+                             Shades="{sombras:SingleShade   Offset='0,30' ,Opacity=0.2,Color=#A1A1A1,BlurRadius=80}"
+                             Margin="10,0,10,15"
+                             Grid.Column="1">
+                <Frame CornerRadius="60"
+                       HasShadow="False"
+                      
+                       Padding="10,5"
+                       VerticalOptions="Center">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://e7.pngegg.com/pngimages/252/666/png-clipart-computer-icons-4-miscellaneous-blue.png"
+                               HeightRequest="45" />
+                        <StackLayout>
+                            <Label Text="en series de 4"
+                                   FontAttributes="Bold" />
+                            <Label Text="Delivery" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </sombras:Shadows>
+        </Grid>
+                </StackLayout>
+            </Frame>
+               
+            
+            
+        </Grid>
+        
+    </StackLayout>
+</ContentView>

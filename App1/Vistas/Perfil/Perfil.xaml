@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Vistas.Perfil.Perfil"
+             xmlns:vistas="clr-namespace:App1.Vistas.Perfil">
+    <Grid BackgroundColor="#5D6B99">
+        <CollectionView ItemsSource="{Binding Perfil}">
+            <CollectionView.Header>
+                <vistas:Encabezado/>
+            </CollectionView.Header>
+        <CollectionView.ItemsLayout>
+                <GridItemsLayout Span="1"
+                                 Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <vistas:Cuerpo/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+    </Grid>
+</ContentPage>

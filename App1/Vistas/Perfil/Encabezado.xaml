@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Vistas.Perfil.Encabezado">
+    <Grid>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Frame BackgroundColor="Transparent" HasShadow="False" CornerRadius="60">
+                    <Image Source="https://image.similarpng.com/very-thumbnail/2021/07/Fitness-Gym-logo-design-template-on-transparent-background-PNG.png"
+                           HeightRequest="60"/>
+                </Frame>
+                <Label FontAttributes="Bold" Text="Perfil de Usuario"
+                       VerticalOptions="Center"
+                       FontSize="20"
+                       HorizontalOptions="CenterAndExpand"/>
+                <Frame BackgroundColor="Transparent" HasShadow="False" CornerRadius="60">
+                    <Image Source="https://image.similarpng.com/very-thumbnail/2021/07/Fitness-Gym-logo-design-template-on-transparent-background-PNG.png"
+                           HeightRequest="60"/>
+                </Frame>
+            </StackLayout>
+           
+        </StackLayout>
+    </Grid>
+</ContentView>

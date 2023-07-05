@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Vistas.Menuprincipal.Piepagina"
+    xmlns:sombras="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+
+    <Grid HeightRequest="80"
+          BackgroundColor="White">
+        <StackLayout Orientation="Horizontal"
+                     Margin="30,0"
+                     Spacing="50">
+            <Image Source="https://i.ibb.co/LzwFDf9/casa-1.png"
+                   HeightRequest="28"/>
+            <Image Source="https://i.ibb.co/02rvcmj/pin-de-mapa.png"
+                   HeightRequest="28" />
+            <BoxView BackgroundColor="Transparent"
+                     HorizontalOptions="CenterAndExpand"/>
+            <Image Source="https://i.ibb.co/HYS75Pr/google-docs.png"
+                   HeightRequest="28" />
+            <Image Source="https://i.ibb.co/Sw8cZMd/configuraciones.png"
+                   HeightRequest="28" />
+        </StackLayout>
+    </Grid>
+</ContentView>

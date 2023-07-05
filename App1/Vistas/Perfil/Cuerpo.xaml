@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Vistas.Perfil.Cuerpo">
+    <Grid>
+
+        <Frame BackgroundColor="#3E4766" Grid.Row="1" HasShadow="False">
+            <StackLayout >
+                <Label FontSize="Caption" FontAttributes="Bold">Nombre:</Label>
+                <Label TextColor="Black" Text="{Binding Nombre}"/>
+                <Label Text=""></Label>
+                <Label FontSize="Caption" FontAttributes="Bold" Text="Descripcion:"/>
+                <Label TextColor="Black" Text="{Binding Descripcion}"/>
+                <Label Text=""></Label>
+                <Label FontSize="Caption" FontAttributes="Bold" Text="Email:"/>
+                <Label TextColor="Black" Text="{Binding Email}"/>
+            </StackLayout>
+        </Frame>
+        <Image Source="{Binding ImagenPerfil}"/>
+    </Grid>
+</ContentView>
